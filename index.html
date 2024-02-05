@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Tabs</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
-    </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
-</body>
+  <div class="choice">
+    <h1>SELECT YOUR CHOICE</h1>
+  
+  </div>
+  <div class="tabs">
+   <button id="menButton" onclick="showProducts('Men')"><span class="fluent-emoji-high-contrast--boy"></span>Men</button>
+<button id="womenButton" onclick="showProducts('Women')"><span class="fluent-emoji-high-contrast--girl"></span>Women</button>
+<button id="kidsButton" onclick="showProducts('Kids')"><span class="tabler--mood-kid"></span>Kids</button>
 
+  </div>
+
+
+  <div id="Men" class="product-container"></div>
+  <div id="Women" class="product-container" style="display: none;"></div>
+  <div id="Kids" class="product-container" style="display: none;"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
